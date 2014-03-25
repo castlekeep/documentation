@@ -10,4 +10,8 @@ else
 	cd ../
 fi
 doxygen doxy.conf
-
+genTime=`date`
+git add .
+git commit -m "[gen] $genTime"
+git push origin gh-pages
+exit 0
