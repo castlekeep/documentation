@@ -38,6 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -62,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,10 +79,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Castlekeep Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>Castlekeep is an isometric castle build simulator, which takes place in the european middle age. It's about creating a colony after your imagination - from a little village to a whole kingdom. You have to organize everything by yourself - construction, economy and defense - just like in real life, in a real community. But of course it's not only about creating a kingdom successfully, you also have to keep an eye on enemies who are in the most cases not that far away from you, waiting for their chance to attack. </p>
+<h1>Documentation </h1>
+<p><a href="http://castlekeep.github.io/documentation/">http://castlekeep.github.io/documentation/</a></p>
+<h1>Build instructions </h1>
+<h4>Linux/Unix</h4>
+<p>Get the source: </p>
+<pre class="fragment">git clone git://github.com/castlekeep/castlekeep.git  
+cd castlekeep
+</pre><p>Create a build directory: </p>
+<pre class="fragment">mkdir build  
+cd build  
+</pre><p>Configure: </p>
+<pre class="fragment">cmake ../  
+</pre><p>Build: </p>
+<pre class="fragment">make
+</pre><h1>Styleguide </h1>
+<p><a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml</a> </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 26 2014 14:08:26 for Castlekeep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 26 2014 14:17:03 for Castlekeep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
