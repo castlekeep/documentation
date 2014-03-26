@@ -7,16 +7,10 @@
 
 var indexSectionsWithContent =
 {
-  0: "cegikmpqrsvw",
-  1: "cegikmpqrsvw",
-  2: "c"
 };
 
 var indexSectionNames =
 {
-  0: "all",
-  1: "classes",
-  2: "namespaces"
 };
 
 function convertToId(search)
